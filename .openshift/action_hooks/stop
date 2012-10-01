@@ -1,0 +1,5 @@
+#!/bin/bash
+# The logic to stop your application should be put in this script.
+set -x
+cd $OPENSHIFT_RUNTIME_DIR/repo/diy/activemq
+bin/activemq stop
