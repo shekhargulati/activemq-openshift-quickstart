@@ -1,5 +1,2 @@
 #!/bin/bash
 # The logic to stop your application should be put in this script.
-set -x
-cd $OPENSHIFT_DATA_DIR/activemq
-bin/activemq stop
