@@ -3,6 +3,7 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 set -x
+export ACTIVEMQ_DATA=$OPENSHIFT_DATA_DIR
 cd $OPENSHIFT_REPO_DIR/diy/activemq
 sed -ig 's/OPENSHIFT_INTERNAL_IP/'$OPENSHIFT_INTERNAL_IP'/g' conf/activemq.xml
 sed -ig 's/OPENSHIFT_INTERNAL_IP/'$OPENSHIFT_INTERNAL_IP'/g' conf/jetty.xml
