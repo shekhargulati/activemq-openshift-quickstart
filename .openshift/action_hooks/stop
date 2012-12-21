@@ -1,5 +1,7 @@
 #!/bin/bash
 # The logic to stop your application should be put in this script.
 set -x
-cd $OPENSHIFT_REPO_DIR/diy/activemq
+cd $OPENSHIFT_REPO_DIR
+pwd
+cd diy/activemq
 bin/activemq stop
