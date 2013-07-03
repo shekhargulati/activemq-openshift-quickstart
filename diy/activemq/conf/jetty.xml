@@ -92,7 +92,7 @@
             <list>
                 <bean id="Connector" class="org.eclipse.jetty.server.nio.SelectChannelConnector">
                     <property name="port" value="8080" />
-                    <property name="host" value="OPENSHIFT_INTERNAL_IP"/>
+                    <property name="host" value="OPENSHIFT_DIY_IP"/>
                 </bean>
             </list>
         </property>
