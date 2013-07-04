@@ -4,7 +4,7 @@
 # $OPENSHIFT_DIY_IP:8080
 set -x
 export ACTIVEMQ_DATA=$OPENSHIFT_DATA_DIR/activemq-data
-cd $OPENSHIFT_DATA_DIR/activemq
+cd $OPENSHIFT_REPO_DIR/diy/activemq
 sed -ig 's/OPENSHIFT_DIY_IP/'$OPENSHIFT_DIY_IP'/g' conf/activemq.xml
 sed -ig 's/OPENSHIFT_DIY_IP/'$OPENSHIFT_DIY_IP'/g' conf/jetty.xml
 bin/activemq start
