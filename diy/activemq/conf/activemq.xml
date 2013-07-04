@@ -133,7 +133,7 @@
             http://activemq.apache.org/configuring-transports.html
         -->
         <transportConnectors>
-            <transportConnector name="http" uri="http://OPENSHIFT_DIY_IP:15005"/>
+            <transportConnector name="http" uri="http://OPENSHIFT_DIY_IP:15005?brokerName=shekhar"/>
         </transportConnectors>
 
 
